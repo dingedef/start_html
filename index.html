@@ -9,16 +9,20 @@
 <body>
 
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">⭐️ MySite</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="navbar">
+  <div class="logo">⭐️ MySite</div>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="smoothScroll('home')">Home</a></li>
+      <li><a href="#services" onclick="smoothScroll('services')">Services</a></li>
+      <li><a href="#contact" onclick="smoothScroll('contact')">Contact</a></li>
+    </ul>
+    <!-- Hamburger Button -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+  </nav>
+</header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -61,7 +65,8 @@
   <footer>
     <p>&copy; 2025 My Awesome Website. All Rights Reserved.</p>
   </footer>
-
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="backToTop" class="back-to-top">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
